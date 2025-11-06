@@ -7,9 +7,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.currentTarget;
-    const data = Object.fromEntries(new FormData(form));
-
-    // For this static demo, just simulate success
+    // simulate success for now
     setStatus('Sending...');
     setTimeout(() => {
       setStatus('Thanks! We will reach out shortly.');
@@ -38,22 +36,22 @@ export default function Contact() {
         >
           <div className="sm:col-span-1">
             <label className="text-sm text-white/70">Name</label>
-            <input name="name" required className="mt-1 w-full rounded-md border border-white/10 bg-black/40 px-3 py-2 text-white placeholder-white/40 outline-none ring-0 focus:border-yellow-400/50" placeholder="Jane Doe" />
+            <input name="name" required className="mt-1 w-full rounded-md border border-white/10 bg-black/40 px-3 py-2 text-white placeholder-white/40 outline-none ring-0 focus:border-cyan-400/50" placeholder="Jane Doe" />
           </div>
           <div className="sm:col-span-1">
             <label className="text-sm text-white/70">Email</label>
-            <input name="email" type="email" required className="mt-1 w-full rounded-md border border-white/10 bg-black/40 px-3 py-2 text-white placeholder-white/40 outline-none ring-0 focus:border-yellow-400/50" placeholder="you@company.com" />
+            <input name="email" type="email" required className="mt-1 w-full rounded-md border border-white/10 bg-black/40 px-3 py-2 text-white placeholder-white/40 outline-none ring-0 focus:border-cyan-400/50" placeholder="you@company.com" />
           </div>
           <div className="sm:col-span-2">
             <label className="text-sm text-white/70">Company</label>
-            <input name="company" className="mt-1 w-full rounded-md border border-white/10 bg-black/40 px-3 py-2 text-white placeholder-white/40 outline-none ring-0 focus:border-yellow-400/50" placeholder="SolarCo" />
+            <input name="company" className="mt-1 w-full rounded-md border border-white/10 bg-black/40 px-3 py-2 text-white placeholder-white/40 outline-none ring-0 focus:border-cyan-400/50" placeholder="SolarCo" />
           </div>
           <div className="sm:col-span-2">
             <label className="text-sm text-white/70">Project details</label>
-            <textarea name="message" rows="4" className="mt-1 w-full rounded-md border border-white/10 bg-black/40 px-3 py-2 text-white placeholder-white/40 outline-none ring-0 focus:border-yellow-400/50" placeholder="Goals, timeline, budget..." />
+            <textarea name="message" rows="4" className="mt-1 w-full rounded-md border border-white/10 bg-black/40 px-3 py-2 text-white placeholder-white/40 outline-none ring-0 focus:border-cyan-400/50" placeholder="Goals, timeline, budget..." />
           </div>
           <div className="sm:col-span-2 flex items-center gap-3">
-            <button type="submit" className="inline-flex items-center justify-center rounded-md bg-yellow-400 px-5 py-3 text-sm font-medium text-black transition hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-400/50">
+            <button type="submit" className="inline-flex items-center justify-center rounded-md bg-red-500 px-5 py-3 text-sm font-medium text-white transition hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-red-500/40">
               Get a Free Quote
             </button>
             {status && <span className="text-sm text-white/70">{status}</span>}

@@ -7,8 +7,8 @@ export default function Hero() {
   const headline = useMemo(
     () => (
       <>
-        Fuel Growth with High-Performance
-        <span className="block text-yellow-400">Paid Social Campaigns</span>
+        Data-Driven Growth for
+        <span className="block text-cyan-400">Paid Social at Scale</span>
       </>
     ),
     []
@@ -18,12 +18,12 @@ export default function Hero() {
     <section id="home" className="relative min-h-[80vh] w-full overflow-hidden bg-black text-white">
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/FduaNp3csZktbOi3/scene.splinecode"
+          scene="https://prod.spline.design/XuAg4PYWfzmy0iW1/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
 
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/85" />
 
       <div className="relative mx-auto flex min-h-[80vh] max-w-7xl flex-col items-start justify-center px-6 py-24 sm:px-10">
         <motion.div
@@ -33,21 +33,21 @@ export default function Hero() {
           className="max-w-3xl"
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs tracking-wide text-white/80 backdrop-blur">
-            <Rocket className="h-3.5 w-3.5 text-yellow-400" />
-            Solar Blaze Media • Data-Driven Social Ads
+            <Rocket className="h-3.5 w-3.5 text-red-500" />
+            Solar Blaze Media • Facebook & Social Ads
           </span>
 
           <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl">
             {headline}
           </h1>
           <p className="mt-5 max-w-2xl text-base text-white/80 sm:text-lg">
-            We design, launch, and optimize Facebook and social media campaigns that turn attention into qualified leads for solar and other commercial industries.
+            We launch and optimize campaigns that turn attention into qualified pipeline for solar and commercial brands. Precise strategy, creative rigor, and measurable outcomes.
           </p>
 
           <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center rounded-md bg-yellow-400 px-5 py-3 text-sm font-medium text-black transition hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-400/50"
+              className="inline-flex items-center justify-center rounded-md bg-red-500 px-5 py-3 text-sm font-medium text-white transition hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-red-500/40"
             >
               Get a Free Quote
             </a>

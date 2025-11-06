@@ -5,7 +5,7 @@ const services = [
   {
     icon: Target,
     title: 'Facebook Ad Management',
-    desc: 'Full-funnel campaign creation, creative testing, and budget optimization to consistently lower CAC and increase qualified pipeline.'
+    desc: 'Full-funnel campaign creation, creative testing, and budget optimization to lower CAC and increase qualified pipeline.'
   },
   {
     icon: LineChart,
@@ -26,7 +26,7 @@ export default function Services() {
         <div className="mb-12">
           <h2 className="text-3xl font-semibold sm:text-4xl">Services</h2>
           <p className="mt-3 max-w-2xl text-white/70">
-            Clear, ROI-focused execution across paid social to help you capture demand and scale with confidence.
+            ROI-focused execution across paid social to help you capture demand and scale with confidence.
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -37,15 +37,16 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="rounded-xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-6"
+              className="rounded-xl border border-white/10 bg-gradient-to-b from-cyan-500/10 via-white/5 to-transparent p-6 hover:shadow-[0_0_60px_-25px_rgba(34,211,238,0.65)]"
             >
-              <s.icon className="h-6 w-6 text-yellow-400" />
+              <s.icon className="h-6 w-6 text-cyan-400" />
               <h3 className="mt-4 text-xl font-medium">{s.title}</h3>
               <p className="mt-2 text-sm text-white/70">{s.desc}</p>
             </motion.div>
           ))}
         </div>
       </div>
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent" />
     </section>
   );
 }
